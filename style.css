@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+:root {
+  --font-1: "Fredoka One", cursive;
+  --font-2: "Questrial", sans-serif;
+  --font-3: "Rampart One", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#actorlist h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: var(--font-3);
+  color: blue;
+  margin-top: 1.5rem;
+}
+
+.actorlistGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.singleactor {
+  height: 350px;
+  padding-top: 4rem;
+}
+
+.fullname {
+  text-align: center;
+  font-family: var(--font-3);
+  font-size: 3rem;
+}
+
+.moviesContainer {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.starred {
+  font-family: var(--font-1);
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+.movieIcon {
+  width: 2rem;
+  height: 2rem;
+}
