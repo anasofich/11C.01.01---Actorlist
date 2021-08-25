@@ -25,11 +25,20 @@ body {
   margin-top: 1.5rem;
 }
 
+.text {
+  text-align: center;
+  color: yellow;
+  margin-top: 1.5rem;
+  font-family: var(--font-1);
+  font-size: 1.5rem;
+}
+
 .actorlistGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 350px));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 400px));
+  gap: 5rem;
   margin: 2rem;
+  justify-content: center;
 }
 
 .singleactor {

@@ -10,24 +10,27 @@
   <body>
     <section id="actorlist">
       <h1>ACTOR LIST</h1>
+      <p class="text">Hover on artist to see starred movies</p>
 
-      <div class="actorlistGrid">
-        <div class="singleactor">
-          <div class="onlyname">
-            <div class="fullname">NAME</div>
+      <div class="actorlistGrid"></div>
+    </section>
+
+    <template class="artistTemplate">
+      <div class="singleactor">
+        <div class="onlyname">
+          <div class="fullname"></div>
+        </div>
+
+        <div class="actorInfo">
+          <div class="moviesContainer">
+            <div class="starred">STARRED MOVIES</div>
+            <div class="movieIcon"><img src="movie-icon.svg" alt="movie icon" /></div>
           </div>
 
-          <div class="actorInfo">
-            <div class="moviesContainer">
-              <div class="starred">STARRED MOVIES</div>
-              <div class="movieIcon"><img src="movie-icon.svg" alt="movie icon" /></div>
-            </div>
-
-            <div class="movie">Movie name</div>
-          </div>
+          <div class="movie"></div>
         </div>
       </div>
-    </section>
+    </template>
 
     <script src="script.js"></script>
   </body>
