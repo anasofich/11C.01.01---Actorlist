@@ -13,11 +13,15 @@
   margin: 0;
 }
 
+body {
+  background-color: #141db2;
+}
+
 #actorlist h1 {
   text-align: center;
   font-size: 4rem;
   font-family: var(--font-3);
-  color: blue;
+  color: yellow;
   margin-top: 1.5rem;
 }
 
@@ -30,18 +34,67 @@
 
 .singleactor {
   height: 350px;
-  padding-top: 4rem;
+  border: 0.2rem solid red;
+  border-radius: 6rem;
+  background-color: red;
+  position: relative;
+}
+
+.singleactor:hover {
+  background-color: red;
+  transition: 0.2s ease-in-out;
+}
+
+.onlyname {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .fullname {
   text-align: center;
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   font-size: 3rem;
+  color: yellow;
+}
+
+.actorInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(180, 110, 110, 0.96);
+  font-family: var(--font-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 6rem;
+}
+
+.actorInfo > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.actorInfo:hover {
+  opacity: 1;
+}
+
+.actorInfo:hover > * {
+  transform: translateY(0);
 }
 
 .moviesContainer {
   display: flex;
-  margin-top: 5rem;
+  margin-top: -10rem;
   justify-content: center;
 }
 
@@ -54,4 +107,9 @@
 .movieIcon {
   width: 2rem;
   height: 2rem;
+}
+
+.movie {
+  margin-top: 3rem;
+  color: yellow;
 }
